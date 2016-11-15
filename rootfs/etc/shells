@@ -1,0 +1,9 @@
+# /etc/shells: valid login shells
+/bin/sh
+/bin/dash
+/bin/bash
+/bin/rbash
+/usr/bin/mc
+/usr/bin/htop
+/bin/ksh93
+/bin/rksh93

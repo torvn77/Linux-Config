@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 #
 
-option=
 command='subvolume create'
 rootfs_patch=/mnt/
 btrfs $command $rootfs_path/bin

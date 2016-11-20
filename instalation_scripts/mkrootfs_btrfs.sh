@@ -2,7 +2,7 @@
 #
 
 command='subvolume create'
-rootfs_patch=/mnt/
+rootfs_path=/mnt
 btrfs $command $rootfs_path/bin
 chmod -c 755  $rootfs_path/bin
 
@@ -96,4 +96,4 @@ btrfs $command $rootfs_path/var/spool
 chmod -c 755  $rootfs_path/var/spool
 
 btrfs $command $rootfs_path/var/tmp
-chmod -c 1777 $rootfs_path/tmp
+chmod -c 1777 $rootfs_path/var/tmp

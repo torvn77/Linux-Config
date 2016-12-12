@@ -34,7 +34,8 @@ open_session)
 ;;
 close_session)
 	$echo Message:  PAM_TYPE = close_session &> $PAM_TTY
-	if [ -d "$SKEL" ] && [ -f $HOME/synchome ] ; then
+#	if [ -d "$SKEL" ] && [ -f $HOME/synchome ] ; then
+	if [ -d "$SKEL" ] && [ -d $HOME ] ; then
 		echo RSYNC $HOME to $SKEL > $PAM_TTY;
 		cd "$HOME";
 		rsync -rRulog . $SKEL > $PAM_TTY;

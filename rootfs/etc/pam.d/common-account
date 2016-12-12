@@ -1,2 +1,2 @@
-session required pam_mkhomedir.so skel=/etc/skel umask=022
-session optional pam_exec.so       /opt/system.scripts/copyhomedir.sh
+session required pam_mkhomedir.so skel=/etc/skel umask=0022
+session optional pam_exec.so      /opt/system.scripts/copyhomedir.sh

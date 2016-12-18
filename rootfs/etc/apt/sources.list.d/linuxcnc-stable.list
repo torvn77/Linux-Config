@@ -1,6 +1,10 @@
 # Для подключения репозитария раскоментрируйте соответствующею пару deb/deb-src ссылок.
 # При этом расскоментировать следует только одну пару, раскомментирование более одной приведет 
 # к конкуренции пакетов из разных репозитариев.
+# Репозитарий для ветки Debian Wheezy можно просмотреть по ссылке: http://linuxcnc.org/dists/wheezy/
+# Пояснения к репозитарию и команды скачивание ключей: http://linuxcnc.org/docs/2.7/html/getting-started/getting-linuxcnc.html#_alternate_install_methods
+# apt-key adv --keyserver hkp://keys.gnupg.net --recv-key 3cb9fd148f374fef
+#
 
 #deb     http://linuxcnc.org wheezy 2.6
 #deb-src http://linuxcnc.org wheezy 2.6

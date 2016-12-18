@@ -13,5 +13,5 @@ deb-src http://ftp.ru.debian.org/debian/ wheezy-updates main contrib
 deb     http://ftp.ru.debian.org/debian/ wheezy-backports main contrib
 deb-src http://ftp.ru.debian.org/debian/ wheezy-backports main contrib
 
-deb     http://ftp.ru.debian.org/debian/ wheezy-backports-sloppy main contrib
-deb-src http://ftp.ru.debian.org/debian/ wheezy-backports-sloppy main contrib
+#deb     http://ftp.ru.debian.org/debian/ wheezy-backports-sloppy main contrib
+#deb-src http://ftp.ru.debian.org/debian/ wheezy-backports-sloppy main contrib

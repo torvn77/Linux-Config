@@ -21,15 +21,13 @@ Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 root	ggg=(ALL:ALL) ALL
 
 # Allow members of group sudo to execute any command
-%sudo	ggg=(ALL:ALL) ALL
-
-#user	ggg=(root:ALL) NOPASSWD: /usr/bin/virt-manager
-
-
-user	ggg=(root:ALL) NOPASSWD: /bin/bash
-#user	ggg=(root:ggg) NOPASSWD: /usr/bin/steam
-#user	ggg=(ALL:ALL) NOPASSWD: /usr/bin/synaptic
+#%sudo	ggg=(ALL:ALL) ALL
 
 # See sudoers(5) for more information on "#include" directives:
 
 # includedir /etc/sudoers.d
+
+#user	ggg=(root:ALL) NOPASSWD: /usr/bin/virt-manager
+#user	ggg=(root:ALL) NOPASSWD: /usr/bin/synaptic
+#user	ggg=(root:ALL) NOPASSWD: /bin/bash
+#user	ggg=(root:ggg) NOPASSWD: /usr/bin/steam

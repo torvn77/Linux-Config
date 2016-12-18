@@ -1,0 +1,14 @@
+# deb http://ftp.ru.debian.org/debian/ wheezy main
+
+deb http://ftp.ru.debian.org/debian/ wheezy main contrib
+deb-src http://ftp.ru.debian.org/debian/  wheezy main contrib
+
+deb http://security.debian.org/  wheezy/updates main contrib
+deb-src http://security.debian.org/  wheezy/updates main contrib
+
+# jessie-updates, previously known as 'volatile'
+deb http://ftp.ru.debian.org/debian/  wheezy-updates main contrib
+deb-src http://ftp.ru.debian.org/debian/  wheezy-updates main contrib
+
+deb http://ftp.ru.debian.org/debian/  wheezy-backports main contrib
+deb-src http://ftp.ru.debian.org/debian/  wheezy-backports main contrib

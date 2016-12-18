@@ -1,4 +1,0 @@
-deb http://download.opensuse.org/repositories/home:/antonbatenev:/tox/Debian_Stretch/ /
-
-#deb https://pkg.tox.chat/debian nightly stretch
-#deb http://pkg.tox.chat/debian stable stretch

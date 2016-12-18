@@ -1,0 +1,18 @@
+# Для подключения репозитария раскоментрируйте соответствующею пару deb/deb-src ссылок.
+# При этом расскоментировать следует только одну пару, раскомментирование более одной приведет 
+# к конкуренции пакетов из разных репозитариев.
+
+#deb     http://linuxcnc.org wheezy 2.6
+#deb-src http://linuxcnc.org wheezy 2.6
+#deb     http://linuxcnc.org wheezy 2.6-sim
+#deb-src http://linuxcnc.org wheezy 2.6-sim
+
+#deb     http://linuxcnc.org wheezy 2.7-rtai
+#deb-src http://linuxcnc.org wheezy 2.7-rtai
+#deb     http://linuxcnc.org wheezy 2.7-uspace
+#deb-src http://linuxcnc.org wheezy 2.7-uspace
+
+#deb     http://linuxcnc.org wheezy linuxcnc2.5
+#deb-src http://linuxcnc.org wheezy linuxcnc2.5
+#deb     http://linuxcnc.org wheezy linuxcnc2.5-sim
+#deb-src http://linuxcnc.org wheezy linuxcnc2.5-sim

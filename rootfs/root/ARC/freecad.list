@@ -1,4 +1,0 @@
-#deb     http://ppa.launchpad.net/freecad-maintainers/freecad-daily/ubuntu xenial main
-#deb-src http://ppa.launchpad.net/freecad-maintainers/freecad-daily/ubuntu xenial main
-deb     http://ppa.launchpad.net/freecad-maintainers/freecad-daily/ubuntu vivid main
-deb-src http://ppa.launchpad.net/freecad-maintainers/freecad-daily/ubuntu vivid main

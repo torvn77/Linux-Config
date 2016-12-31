@@ -1,7 +1,0 @@
-deb     http://linuxcnc.org jessie base
-deb-src http://linuxcnc.org jessie base
-deb     http://buildbot.linuxcnc.org jessie master-rtpreempt
-deb-src http://buildbot.linuxcnc.org jessie master-rtpreempt
-
-#deb     http://buildbot.linuxcnc.org wheezy master-sim
-#deb-src http://buildbot.linuxcnc.org wheezy master-sim

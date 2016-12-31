@@ -1,0 +1,8 @@
+#deb     http://linuxcnc.org stretch base
+#deb-src http://linuxcnc.org stretch base
+
+#deb     http://buildbot.linuxcnc.org stretch master-rtpreempt
+#deb-src http://buildbot.linuxcnc.org stretch master-rtpreempt
+
+#deb     http://buildbot.linuxcnc.org stretch master-sim
+#deb-src http://buildbot.linuxcnc.org stretch master-sim

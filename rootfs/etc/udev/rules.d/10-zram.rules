@@ -1,4 +1,8 @@
 #etc/udev/rules.d/10-zram.rules
-# Так же надо сделать записи в /etc/fstab и /etc/modules
+# Так же надо сделать записи в /etc/fstab
+# /dev/zram0 none swap sw,pri=32767 0 1
+# и /etc/modules
+# zram
+# https://wiki.gentoo.org/wiki/Zram
 # https://www.linux.org.ru/forum/general/13132596?cid=13133180
-KERNEL=="zram0", SUBSYSTEM=="block", DRIVER=="", ACTION=="add", ATTR{disksize}=="0", ATTR{disksize}="размер", RUN="/sbin/mkswap $env{DEVNAME}"
+KERNEL=="zram0", SUBSYSTEM=="block", DRIVER=="", ACTION=="add", ATTR{disksize}=="0", ATTR{disksize}="512M", RUN="/sbin/mkswap -p4096 /dev/zram0"

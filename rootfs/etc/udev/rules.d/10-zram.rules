@@ -1,0 +1,4 @@
+#etc/udev/rules.d/10-zram.rules
+# Так же надо сделать записи в /etc/fstab и /etc/modules
+# https://www.linux.org.ru/forum/general/13132596?cid=13133180
+KERNEL=="zram0", SUBSYSTEM=="block", DRIVER=="", ACTION=="add", ATTR{disksize}=="0", ATTR{disksize}="размер", RUN="/sbin/mkswap $env{DEVNAME}"

@@ -44,11 +44,13 @@ UUID=e5bb528e-21eb-4c8e-bdc1-eb1460a80688 /home/user      btrfs   noatime,nodira
 UUID=e5bb528e-21eb-4c8e-bdc1-eb1460a80688 /home/nx        btrfs   noatime,nodiratime,nosuid,nossd,compress-force=zlib,subvol=nx     0 2
 /dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0 0
 
-tmpfs_001 /tmp            tmpfs noatime,nosuid,size=512M,mode=1777   0 1
-tmpfs_002 /var/cache/apt  tmpfs noatime,nosuid,size=001G,mode=0755   0 1
-tmpfs_003 /media          tmpfs noatime,nosuid,size=512K,mode=0755   0 2
-tmpfs_004 /storage/Memory tmpfs noatime,nosuid,size=512M,mode=0777   0 2
+
+tmpfs_001 /tmp           tmpfs size=512M,mode=1777,noatime 0 1
+tmpfs_002 /media         tmpfs size=128K,mode=0755,noatime 0 1
+tmpfs_003 /var/cache/apt tmpfs size=001G,mode=0755,noatime 0 2
+tmpfs_004 /home/Memory   tmpfs size=001G,mode=0777,noatime 0 2
 #tmpfs_005 /var/log tmpfs noatime,nosuid,size=512M,mode=0777   0 2
 
 #/home/user/image.iso /media/Siemens udf,iso9660 user,ro,exec,nosuid,loop 0 2
 
+/dev/zram0 none swap sw 0 1

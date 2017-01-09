@@ -53,4 +53,4 @@ tmpfs_004 /home/Memory   tmpfs size=001G,mode=0777,noatime 0 2
 
 #/home/user/image.iso /media/Siemens udf,iso9660 user,ro,exec,nosuid,loop 0 2
 
-/dev/zram0 none swap sw 0 1
+/dev/zram0 none swap sw,pri=32767 0 1

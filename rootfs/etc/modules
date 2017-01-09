@@ -1,1 +1,2 @@
-zram num_devices=4
+# num_devices=4
+zram

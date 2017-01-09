@@ -1,6 +1,6 @@
-#etc/udev/rules.d/10-zram.rules
+# Файл /etc/udev/rules.d/10-zram.rules
 # Так же надо сделать записи в 
-# Файл/etc/fstab
+# Файл /etc/fstab
 # /dev/zram0 none swap sw,pri=32767 0 1
 # Файл /etc/modules
 # zram

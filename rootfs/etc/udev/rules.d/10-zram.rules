@@ -9,4 +9,4 @@
 #
 # https://wiki.gentoo.org/wiki/Zram
 # https://www.linux.org.ru/forum/general/13132596?cid=13133180
-KERNEL=="zram0", SUBSYSTEM=="block", DRIVER=="", ACTION=="add", ATTR{disksize}=="0", ATTR{disksize}="512M", RUN="/sbin/mkswap -p4096 /dev/zram0"
+KERNEL=="zram[0-9]*", SUBSYSTEM=="block", DRIVER=="", ACTION=="add", ATTR{disksize}=="0", ATTR{disksize}="512M", RUN="/sbin/mkswap -p4096 $env{DEVNAME}"

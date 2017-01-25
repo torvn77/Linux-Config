@@ -40,6 +40,7 @@ close_session)
 		cd "$HOME";
 		rsync -rRulog . $SKEL > $PAM_TTY;
 		rm -f $HOME/synchome > $PAM_TTY;
+		rm -f $SKEL/synchome > $PAM_TTY;
 	fi
 ;;
 * )

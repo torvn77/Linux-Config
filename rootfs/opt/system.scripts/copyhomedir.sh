@@ -4,7 +4,7 @@ export echo=/bin/echo
 export env=/usr/bin/env
 export home_d=/home
 #export skel_d=/skel.d
-export skel_d=/home_
+export skel_d=/skel_
 export HOME=$home_d/$PAM_USER
 export SKEL=$skel_d/$PAM_USER
 #

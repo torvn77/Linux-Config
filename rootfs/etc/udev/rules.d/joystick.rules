@@ -1,1 +1,2 @@
+#rw acess for hal_input
 SUBSYSTEM=="input" ENV{ID_INPUT_JOYSTICK}=="1" MODE="666"

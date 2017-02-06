@@ -4,15 +4,8 @@
 # You can modify it, as long as you keep each rule on a single
 # line, and change only the value of the NAME= key.
 
+# PCI device 0x10ec:/sys/devices/pci0000:00/0000:00:0a.0/0000:05:00.0 (r8169)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:1d:7d:01:60:35", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
 
-# PCI device 0x8086:0x10d3 (e1000e)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:1b:21:65:1e:08", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
-
-# PCI device 0x10ec:0x8168 (r8169) (motherboard)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="6c:f0:49:1f:c6:45", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth1"
-
-# USB device 0x:0x (cdc_ether)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:a0:c6:00:00:00", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth2"
-
-# PCI device 0x168c:0x0032 (ath9k)
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="18:a6:f7:9f:9c:9b", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
+# PCI device 0x168c:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0 (ath9k)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="f4:f2:6d:b5:7e:28", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
